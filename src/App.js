@@ -43,12 +43,18 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 font-weight: lighter;
+margin:1rem;
 &:hover{
   background: #000;
   color: #fff;
+  
 }
 
 ` ;
+
+const DependantButton = styled(Button1)`
+background: green;
+`;
 
 
 
@@ -64,6 +70,7 @@ function App() {
         <Button backgroundColor='teal' color='white'>Subscribe</Button>
 
         <Button1>Plain button</Button1>
+        <DependantButton>Depends on button1 style</DependantButton>
     </Wrapper>
     
   );
